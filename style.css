@@ -14,10 +14,12 @@
     --txt-input: #212529;
     --ol-input: #02799D;
     --bd-input:rgba(73, 80, 87, 0.3);
+    --bg-input: #DCE2E9;
     --txt-placeholder: rgba(73, 80, 87, 0.5);
 
     --txt-button: white;
     --bg-button: #02799D;
+    --bg-button-hover: #075A75;
 
     --txt-error: white;
     --bg-error: #F03E3E;    
@@ -25,8 +27,12 @@
 
 body {
     background-color: #040924;
-    font-size: 1.6rem;
     font-family: "Roboto", sans-serif;
+}
+
+body, input, button {
+    font-size: 1.6rem;
+    line-height: 2rem;
 }
 
 .container {
@@ -36,11 +42,80 @@ body {
 }
 
 .card {
-    background: white;
+    background-color: white;
     max-width: 42.8rem;
     padding: 4.8rem 6.4rem 6.4rem;
     margin-inline: auto;
 
     border-radius: .6rem;
     box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: var(--txt-heading);
+}
+
+form {
+    width: 30rem;
+}
+
+form h1 {
+    margin-bottom: 3.2rem;    
+}
+
+.input-wrapper + .input-wrapper{
+    margin-top: 1.6rem;
+}
+
+form label {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--txt-label);
+    display: block;
+    margin-bottom: .8rem;
+}
+
+form input {
+    width: 100%;
+    color: var(--txt-input);
+    background-color: var(--bg-input);
+    border: 1px solid var(--bd-input);
+    border-radius: .4rem;
+    padding: 1.6rem;
+}
+
+form input:focus {
+    outline: 2px solid var(--ol-input);
+}
+
+form input::placeholder {
+    color: var(--txt-placeholder);
+}
+
+button {
+    width: 100%;
+    margin-top: 3.2rem;
+    padding: 1.6rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+
+    border: none;
+    border-radius: .4rem;
+    background-color: var(--bg-button);
+
+    color: var(--txt-button);
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color .4s;
+}
+
+button:hover {
+    background-color: var(--bg-button-hover);
 }
