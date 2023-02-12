@@ -1,1 +1,3 @@
-# explorer_imc
+# BMI Calculator
+
+BMI Body Mass Index
