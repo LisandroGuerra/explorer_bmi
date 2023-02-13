@@ -1,5 +1,5 @@
-import { Modal } from "./modal.js"
 import { AlertError } from "./alert-box.js"
+import { notNumber, bmiCalcule, displayResultMessage } from "./utils.js"
 
 
 const form = document.querySelector("form")
@@ -13,28 +13,16 @@ form.onsubmit = event => {
     const weight = weightInput.value
     const height = heightInput.value
 
-    const showAlertBox = notNumber(weight) || notNumber(height)
+    const weightOrHeightNotNumber = notNumber(weight) || notNumber(height)
 
-    if (showAlertBox) {
+    if (weightOrHeightNotNumber) {
         AlertError.open()
         return
     }
 
     AlertError.close()
 
-    const result = bmi(weight, height)
-    const msg = `Your BMI is ${result}`
+    const result = bmiCalcule(weight, height)
 
-    Modal.message.innerText = msg
-    Modal.open()
-}
-
-
-function notNumber(value) {
-    return (isNaN(value) || value == "")
-}
-
-
-function bmi(weight, height) {
-    return (weight / ((height / 100) ** 2)).toFixed(2)
+    displayResultMessage(result)
 }
