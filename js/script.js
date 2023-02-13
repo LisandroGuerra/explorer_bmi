@@ -26,3 +26,6 @@ form.onsubmit = event => {
 
     displayResultMessage(result)
 }
+
+heightInput.oninput = () => AlertError.close()
+weightInput.oninput = () => AlertError.close()

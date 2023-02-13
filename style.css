@@ -35,24 +35,24 @@ body, input, button {
     line-height: 2rem;
 }
 
-.alert-box.open {
+.alert-box.open { 
+    height:50px;
+    padding: 1.2rem;
     opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
 }
 
 .alert-box {
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:0;
     background-color: var(--bg-error);
-    padding: .8rem;
     color: var(--txt-error);
     text-align: center;
     font-weight: bold;
 
-    transform: translateY(-30px);
-    transition: transform .5s;
-
     opacity: 0;
-    visibility: hidden;
+    transition: .3s;
 }
 
 .container {
