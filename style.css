@@ -94,7 +94,7 @@ form input::placeholder {
     color: var(--txt-placeholder);
 }
 
-button {
+form button {
     width: 100%;
     margin-top: 3.2rem;
     padding: 1.6rem;
@@ -116,6 +116,40 @@ button {
     transition: background-color .4s;
 }
 
-button:hover {
+form button:hover {
     background-color: var(--bg-button-hover);
+}
+
+
+/* Modal */
+.modal-wrapper {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    display: grid;
+    place-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+}
+
+.close {
+    position:absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    background: none;
+    border: none;
+
+    cursor: pointer;
+
+    transition: transform .4s;
+}
+
+.close:hover {
+    transform: scale(1.2);
 }
