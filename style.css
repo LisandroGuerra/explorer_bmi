@@ -35,6 +35,26 @@ body, input, button {
     line-height: 2rem;
 }
 
+.alert-box.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.alert-box {
+    background-color: var(--bg-error);
+    padding: .8rem;
+    color: var(--txt-error);
+    text-align: center;
+    font-weight: bold;
+
+    transform: translateY(-30px);
+    transition: transform .5s;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
 .container {
     height: 100vh;
     display: grid;
@@ -132,6 +152,11 @@ form button:hover {
 
     opacity: 0;
     visibility: hidden;
+}
+
+.modal-wrapper.open {
+    opacity: 1;
+    visibility: visible;
 }
 
 .modal {
