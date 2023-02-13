@@ -1,7 +1,7 @@
 import { Modal } from "./modal.js"
+import { AlertError } from "./alert-box.js"
 
-// Variables
-const alertBox = document.querySelector(".alert-box")
+
 const form = document.querySelector("form")
 const weightInput = document.querySelector("#weight")
 const heightInput = document.querySelector("#height")
@@ -15,7 +15,12 @@ form.onsubmit = event => {
 
     const showAlertBox = notNumber(weight) || notNumber(height)
 
-    if (showAlertBox) return
+    if (showAlertBox) {
+        AlertError.open()
+        return
+    }
+
+    AlertError.close()
 
     const result = bmi(weight, height)
     const msg = `Your BMI is ${result}`
