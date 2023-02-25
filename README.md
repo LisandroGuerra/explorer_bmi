@@ -1,7 +1,3 @@
-# BMI Calculator
-
-## BMI - Body Mass Index 
-
 <h1 align="center">BMI Calculator</h1>
 
 <p align="center">
