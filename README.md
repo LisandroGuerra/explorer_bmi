@@ -13,7 +13,7 @@
 
 ![screen-gif](./assets/bmi_calculator.gif)
 
-you can see the project [here](https://lisandroguerra.github.io/explorer_bmi_calc/)
+you can see the project [here](https://lisandroguerra.github.io/explorer_bmi/)
 
 ## 🚀 Tecnologias
 
