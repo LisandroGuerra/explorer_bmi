@@ -1,17 +1,20 @@
 <h1 align="center">BMI Calculator</h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologies">Tecnologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;
 </p>
 
-<br>
+<div align="center">
+<!-- ![screen-gif](./assets/bmi_calculator.gif) -->
+<img src="assets/bmi_calculator.gif">
 
-![screen-gif](./assets/bmi_calculator.gif)
 
 you can see the project [here](https://lisandroguerra.github.io/explorer_bmi/)
 
-## 🚀 Tecnologias
+</div>
+
+## 🚀 Tecnologies
 
 EThis project uses this tecnologies:
 
