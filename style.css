@@ -142,6 +142,22 @@ form button:hover {
 
 
 /* Modal */
+.bmi{
+    font-size: 3.2rem;
+    line-height: 4rem;
+    color: var(--txt-heading);
+}
+
+.category{
+    font-size: 1.6rem;
+    line-height: 4rem;
+    color: var(--txt-heading);
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .modal-wrapper {
     position: absolute;
     inset: 0;

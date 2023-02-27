@@ -1,6 +1,7 @@
 export const Modal = {
     wrapper: document.querySelector(".modal-wrapper"),
-    message: document.querySelector(".title span"),
+    bmiMsg: document.querySelector(".bmi span"),
+    categoryMsg: document.querySelector(".category span"),
     closeBtn: document.querySelector(".close"),
     open() {
         Modal.wrapper.classList.add("open")

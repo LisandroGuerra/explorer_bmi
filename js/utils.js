@@ -11,11 +11,32 @@ function bmiCalcule(weight, height) {
 }
 
 
-function displayResultMessage(result) {
-    const msg = `Your BMI is ${result}`
+function bmiCategorize(result) {
 
-    Modal.message.innerText = msg
+    let category = "Not categorized"
+
+    if (result < 18.5) {
+        category = "Underweight"
+    }else if (result >= 18.5 && result < 25){
+        category = "Healthy Weight"
+    }else if (result >= 25 && result < 30){
+        category = "Overweight"
+    }else{
+        category = "Obesity"
+    }
+
+    return category
+}
+
+
+function displayResultMessage(result, category) {
+    const bmiMsg = `Your BMI is ${result}`
+    const categoryMsg = `Category range: ${category}`
+
+    Modal.bmiMsg.innerText = bmiMsg
+    Modal.categoryMsg.innerText = categoryMsg
+
     Modal.open()
 }
 
-export {notNumber, bmiCalcule, displayResultMessage}
+export {notNumber, bmiCalcule, bmiCategorize, displayResultMessage}

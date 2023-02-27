@@ -1,5 +1,5 @@
 import { AlertError } from "./alert-box.js"
-import { notNumber, bmiCalcule, displayResultMessage } from "./utils.js"
+import { notNumber, bmiCalcule, bmiCategorize,displayResultMessage } from "./utils.js"
 
 
 const form = document.querySelector("form")
@@ -23,8 +23,9 @@ form.onsubmit = event => {
     AlertError.close()
 
     const result = bmiCalcule(weight, height)
+    const category = bmiCategorize(result)
 
-    displayResultMessage(result)
+    displayResultMessage(result, category)
 }
 
 heightInput.oninput = () => AlertError.close()
